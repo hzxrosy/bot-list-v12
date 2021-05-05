@@ -23,14 +23,14 @@ Mesaj.edit(PepeCode)
 }
 
 exports.conf = {
-    enabled: true,
-    guildOnly: true,
-    aliases: ['members','say'],
-    permLevel: 0
-  }
+   enabled: true,
+   guildOnly: true,
+   aliases: ['members','say'],
+   permLevel: 0
+}
   
-  exports.help = {
-    name: 'Pepeler',
-    description: 'Pepeleri Gösterir',
-    usage: 'm'
-  }
+exports.help = {
+   name: 'Pepeler',
+   description: 'Pepeleri Gösterir',
+   usage: 'm'
+}
