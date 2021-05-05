@@ -17,14 +17,14 @@ await message.guild.members.cache.get(Pepe.id).ban({reason : args.slice(1).join(
 },2500)
 }
 exports.conf = {
-  enabled: true,
-  guildOnly: true,
-  aliases: ['ban'],
-  permLevel: 0
+   enabled: true,
+   guildOnly: true,
+   aliases: ['ban'],
+   permLevel: 0
 }
 
 exports.help = {
-  name: 'Ban',
-  description: 'LOL!',
-  usage: 'ban'
+   name: 'Ban',
+   description: 'LOL!',
+   usage: 'ban'
 }
