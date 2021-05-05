@@ -48,14 +48,14 @@ db.set(`Eklenme_${ClientID}`,moment().add(3,'hours').format('LLL'))
 }
 
 exports.conf = {
-	enabled: true,
-	guildOnly: true,
-	aliases: ['bot-ekle','botekle','addbot','add-bot'],
-	permLevel: 0
+   enabled: true,
+   guildOnly: true,
+   aliases: ['bot-ekle','botekle','addbot','add-bot'],
+   permLevel: 0
 }
 
 exports.help = {
-	name: 'BOT Ekle',
-	description: 'BOT Ekler',
-	usage: 'botekle'
+   name: 'BOT Ekle',
+   description: 'BOT Ekler',
+   usage: 'botekle'
 }
