@@ -8,7 +8,7 @@ const Sıralama = db.all().filter(data => data.ID.startsWith(`Count_`)).sort((a,
 Sıralama.length = 10
 let SonuçDB = ''
 for (var i in Sıralama) {
-SonuçDB += `**${Sıralama.indexOf(Sıralama[i])+1}. ${client.users.cache.get(Sıralama[i].ID.slice(6)).username}** - **${Sıralama[i].data}** Ekleme.\n`
+SonuçDB += `**${Sıralama.indexOf(Sıralama[i])+1}. ${client.users.cache.get(Sıralama[i].ID.slice(6))?client.users.cache.get(Sıralama[i].ID.slice(6)).username:'Sunucudan Çıkmış.'}** - **${Sıralama[i].data}** Ekleme.\n`
 }
 const PepeCode = new Discord.MessageEmbed()
 .setColor('#12ae87')
@@ -22,15 +22,15 @@ ${SonuçDB ? SonuçDB:'Veri Yok.'}`)
 message.channel.send(PepeCode)
 }
     
-    exports.conf = {
-        enabled: true,
-        guildOnly: true,
-        aliases: ['top'],
-        permLevel: 0
-      }
+exports.conf = {
+   enabled: true,
+   guildOnly: true,
+   aliases: ['top'],
+   permLevel: 0
+}
       
-      exports.help = {
-        name: 'Top',
-        description: 'Top BOT',
-        usage: 'top'
-      }
+exports.help = {
+   name: 'Top',
+   description: 'Top BOT',
+   usage: 'top'
+}
