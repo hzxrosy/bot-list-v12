@@ -21,14 +21,14 @@ message.react('✅')
 }
 
 exports.conf = {
-    enabled: true,
-    guildOnly: true,
-    aliases: ['sertifika','s'],
-    permLevel: 0
-  }
+   enabled: true,
+   guildOnly: true,
+   aliases: ['sertifika','s'],
+   permLevel: 0
+}
   
-  exports.help = {
-    name: 'Sertifika Verme',
-    description: 'Sertifika Verme',
-    usage: 's'
-  }
+exports.help = {
+   name: 'Sertifika Verme',
+   description: 'Sertifika Verme',
+   usage: 's'
+}
